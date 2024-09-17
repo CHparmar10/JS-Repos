@@ -36,3 +36,20 @@ let SomeNumber = 33
 let stringNumber = String(SomeNumber)
 console.log(stringNumber);
 console.log(typeof(stringNumber))
+
+console.log("1" + 2); // output - 12
+console.log(1 + "2"); // output - 12
+console.log("1" + 2 + 2); // output - 122
+console.log(1 + 2 + "2"); // output - 32
+
+
+// Read about prefix and Postfix
+let gamecounter = 100
+++gamecounter; // output - 101
+//gamecounter++ // output - 101
+
+// Link for read about prefix and postfix
+
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Increment
+
+
