@@ -56,4 +56,26 @@ console.log(typeof anotherid);
 // Notes - https://262.ecma-international.org/5.1/#sec-11.4.3 - For Read the Result of datatypes.
 
 
+//****************************************************************Stack Memory & Heap Memory *************************************************************************/
+// Stack(Primitive)  => Heap(Non-Primitive)
+
+let myYoutubename = "chiragparmardotcom"
+let anothername = myYoutubename
+
+anothername = "chaiaurcode" 
+
+console.log(myYoutubename);
+console.log(anothername);
+
+let userone = {
+    email:"user@google.com",
+    upi:"user@ybl"
+}
+
+let userTwo = userone;
+
+userTwo.email = "chparmar10@gmail.com";
+
+console.log(userone.email)
+console.log(userTwo.email)
 
