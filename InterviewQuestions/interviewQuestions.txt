@@ -1,0 +1,68 @@
+// How does Javascript works behind the scene?
+
+
+Javascript Execution context
+{} => Global Execution context (Global environment)
+
+Question 1 - How many types of Javascript Execution context.
+
+- Global Execution context
+- Function (Functional) Execution context
+- Eval Execution context
+
+Question 2 - How many phase that run the Javascript?
+
+- There two types of phase
+1) Memory creation phase (creation phase)
+2) Execution phase
+
+Question 3 - Difference between Memory creation phase and Execution phase?
+
+=> Memory creation phase 
+- In the Memory creation phase allocate space for Delcared variables. 
+- Not Execute variables.
+
+Ex = 
+    let val1 = 10;
+    let val2 = 5;
+
+    function addNum(num1,num2){
+        let total = num1 + num2;
+        return total;
+    }
+    let result1 = addNum(val1,val2);
+    let result2 = addNum(10,2);
+=>
+
+Question 4 - Execution Steps of Javascript:
+
+1) Global Execution 
+2) Memory creation phase
+
+val1 => undefined
+val2 => undefined
+addNum => defination
+result1 => undefined
+result2 => undefined
+
+3) Execution phase
+
+val1 => 10
+val2 => 5
+addNum => 
+result1 => 15
+result2 => 12
+new variable environment + Execution thread
+
+Memory phase
+val1 => undefined
+val2 => undefined
+total=> undefined
+
+Execution phase
+num1 => 10
+num2 => 5
+total=> 15
+result1 => 15  /// result1 is return from Global Execution phase
+
+* Call stack
